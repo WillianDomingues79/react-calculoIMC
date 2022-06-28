@@ -48,7 +48,29 @@ export const styles = StyleSheet.create({
   },
   exibitionResultImc: {
     width: '100%',
-    height: '50%'
+    height: '60%'
+  },
+  listImcs: {
+    marginTop: 20
+  },
+  resultImcItem: {
+    fontSize: 26,
+    color: 'red',
+    height: 50,
+    width: '100%',
+    paddingRight: 20
+  },
+  textResultItemList: {
+    fontSize: 16,
+    color: 'red'
+  },
+  textAllResults: {
+    color: 'red',
+    fontSize: 20,
+    paddingTop: 15,
+    fontWeight: 'bold',
+    fontStyle: 'italic',
+    textDecorationLine: 'underline'
   }
 })
 

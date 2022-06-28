@@ -4,7 +4,7 @@ export const styles = StyleSheet.create({
   contextImc: {
     flex: 1,
     marginTop: 20,
-    paddingTop: 60,
+    paddingTop: 10,
     borderRadius: 50,
     alignItems: 'center',
     width: '100%'
