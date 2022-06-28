@@ -29,7 +29,7 @@ export const styles = StyleSheet.create({
     borderRadius: 50,
     paddingBottom: 5,
     paddingTop: 5,
-    marginBottom: 5
+    marginTop: 15
   },
   sharedText: {
     color: '#ffffff',
