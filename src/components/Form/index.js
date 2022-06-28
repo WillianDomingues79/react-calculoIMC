@@ -4,7 +4,9 @@ import {
   Text,
   TextInput,
   TouchableOpacity,
-  Vibration
+  Vibration,
+  Pressable,
+  Keyboard
 } from 'react-native'
 import ResultImc from './ResultImc'
 import styles from './style'
@@ -20,12 +22,8 @@ export default function Form(props) {
 
   //retorna o calculo do IMC
   function imcCalculator() {
-    return setImc(
-      (
-        (weight.replace(',', '.') * 1) /
-        (height.replace(',', '.') * 1 * height.replace(',', '.') * 1)
-      ).toFixed(2)
-    )
+    let heighFormat = height.replace(',', '.') //Converte as virgulas e pontos para funcionar em Iphone
+    return setImc((weight / (heighFormat * heighFormat)).toFixed(2))
   }
 
   function verificationImc() {
@@ -55,11 +53,12 @@ export default function Form(props) {
     setMessageImc('Preencha o peso e altura')
   }
 
+  //O Pressable juntamento com o Keyboard.dismiss faz o teclado voltar
   return (
-    <View style={styles.formContext}>
+    <Pressable onPress={Keyboard.dismiss} style={styles.formContext}>
       <View style={styles.form}>
         <Text style={styles.formLabel}>Altura</Text>
-        {/* <Text style={styles.errorMessage}>{errorMessage}</Text> */}
+        <Text style={styles.errorMessage}>{errorMessage}</Text>
         <TextInput
           style={styles.input}
           onChangeText={setHeight} //Usado para alterar o estado do campo
@@ -86,6 +85,6 @@ export default function Form(props) {
       </View>
       {/* Chama o componente de resultado */}
       <ResultImc messageResultImc={messageImc} resultImc={imc} />
-    </View>
+    </Pressable>
   )
 }

@@ -21,8 +21,8 @@ export default function ResultImc(props) {
           <View />
         )}
       </View>
-      <Text style={styles.information}>{props.messageResultImc}</Text>
-      <Text style={styles.numberImc}>{props.resultImc}</Text>
+      <Text style={styles.titleResultImc}>{props.messageResultImc}</Text>
+      <Text style={styles.resultImc}>{props.resultImc}</Text>
     </View>
   )
 }
