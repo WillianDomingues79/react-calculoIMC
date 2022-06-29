@@ -30,7 +30,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     width: '90%',
-    backgroundColor: '#ff0043',
+    backgroundColor: '#d13040',
     paddingTop: 14,
     paddingBottom: 14,
     marginLeft: 12,
@@ -42,7 +42,7 @@ export const styles = StyleSheet.create({
   },
   errorMessage: {
     fontSize: 12,
-    color: 'red',
+    color: '#5336a3',
     fontWeight: 'bold',
     paddingLeft: 20
   },
@@ -55,17 +55,17 @@ export const styles = StyleSheet.create({
   },
   resultImcItem: {
     fontSize: 26,
-    color: 'red',
+    color: '#5336a3',
     height: 50,
     width: '100%',
     paddingRight: 20
   },
   textResultItemList: {
     fontSize: 16,
-    color: 'red'
+    color: '#5336a3'
   },
   textAllResults: {
-    color: 'red',
+    color: '#5336a3',
     fontSize: 20,
     paddingTop: 15,
     fontWeight: 'bold',

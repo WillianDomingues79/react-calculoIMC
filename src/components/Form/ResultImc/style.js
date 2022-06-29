@@ -11,12 +11,12 @@ export const styles = StyleSheet.create({
   },
   resultImc: {
     fontSize: 48,
-    color: '#ff0043',
+    color: '#5336a3',
     fontWeight: 'bold'
   },
   titleResultImc: {
     fontSize: 18,
-    color: '#ff0043',
+    color: '#5336a3',
     fontWeight: 'bold'
   },
   boxSharebutton: {

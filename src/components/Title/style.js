@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
     padding: 10
   },
   textTitle: {
-    color: '#FF0043',
+    color: '#5336a3',
     fontSize: 24,
     fontWeight: 'bold'
   }

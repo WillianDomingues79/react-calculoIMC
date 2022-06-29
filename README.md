@@ -2,8 +2,6 @@
 
 ## Aplicativo de calculadora IMC feito em React Native
 
-![alt](/server/src/assets/feedwidgif.gif)
-
 ### 💻 Tecnologias
 
 :white_check_mark: ReactNative</br>
@@ -22,4 +20,5 @@ O Projeto constitui em um aplicativo de calculos IMC criado para estudos da tecn
 
 </br>
 
-![alt](/server/src/assets/Screenshot.png)
+![alt](/assets/Screen1.png)
+![alt](/assets/Screen2.png)
